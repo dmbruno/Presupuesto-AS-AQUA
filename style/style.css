@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, rgba(63,180,109,0.9233894241290266) 59%, rgba(252,252,252,0.968207351299895) 100%);
+    margin-bottom: 50px;
+}
+hr{
+    margin-left: 5.125rem;
+    margin-right: 5.125rem;
+    color: black;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+
+h2 {
+    color: white;
+    margin-top: .625rem;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contenedor-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-calcular{
+    background-color: green;
+    padding: 10px 60px;
+    
+}
+
+.btn-calcular:hover{
+    background-color: #479df4;
+
+}
+
+.pres-final{
+    color: black;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 60%;  /* Aumenta el ancho de la tarjeta */
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h1, .card h2 {
+    color: #3399ff;
+}
+
+.card p {
+    color: #333;
+    font-size: 20px;  /* Aumenta el tamaño de la fuente */
+}
+
+.card hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.contenedor-aclaracion{
+    margin-top: .9375rem;
+}
+

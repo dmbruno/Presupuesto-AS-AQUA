@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Presupuesto AS AQUA</title>
+</head>
+
+<body>
+    <h1>Formulario de Presupuesto</h1>
+    <hr>
+    <hr>
+    <form class="contenedor-formulario">
+        <h2>Información del Proyecto</h2>
+        <label for="projectName">Titular Del Proyecto:</label><br>
+        <input type="text" id="projectName" name="projectName" class="titular"><br>
+        <label for="projectLocation">Ubicación del proyecto:</label><br>
+        <input type="text" id="projectLocation" name="projectLocation" class="direccion"><br>
+        <label for="startDate">Fecha de inicio estimada:</label><br>
+        <input type="date" id="startDate" name="startDate"><br>
+        <label for="endDate">Fecha de finalización estimada:</label><br>
+        <input type="date" id="endDate" name="endDate"><br>
+
+        <h2>Detalles del Área de Riego</h2>
+        <label for="totalArea">Superficie total en metros cuadrados:</label><br>
+        <input type="number" id="totalArea" name="totalArea"><br>
+        <label for="numZones">Número de zonas de riego:</label><br>
+        <input type="number" id="numZones" name="numZones"><br>
+
+        <h2>Materiales Necesarios</h2>
+        <label for="pipeLength">Longitud total de tuberías (en metros):</label><br>
+        <input type="number" id="pipeLength" name="pipeLength" class="longitud"><br>
+        <label for="numSprinklers">Número de aspersores:</label><br>
+        <input type="number" id="numSprinklers" name="numSprinklers" class="aspersor"><br>
+        <label for="numCouplings">Número de acoples:</label><br>
+        <input type="number" id="numCouplings" name="numCouplings" class="acople"><br>
+
+        <h2>Costos de los Materiales</h2>
+        <label for="pipeCost">Costo por metro de tubería:</label><br>
+        <input type="number" id="pipeCost" name="pipeCost" class="tuberiaC"><br>
+        <label for="sprinklerCost">Costo por aspersor:</label><br>
+        <input type="number" id="sprinklerCost" name="sprinklerCost" class="aspersorC"><br>
+        <label for="couplingCost">Costo por acople:</label><br>
+        <input type="number" id="couplingCost" name="couplingCost" class="acopleC"><br>
+
+        <h2>Costos de Mano de Obra</h2>
+        <label for="workHours">Horas de trabajo estimadas:</label><br>
+        <input type="number" id="workHours" name="workHours" class="CantHoras"><br>
+        <label for="hourlyRate">Tarifa por hora de trabajo:</label><br>
+        <input type="number" id="hourlyRate" name="hourlyRate" class="horasT"><br>
+        <section class="contenedor-btn">
+            <button type="submit" class="btn-calcular">Calcular Presupuesto</button>
+        </section>
+    </form>
+    <script src="./js/java.js"></script>
+</body>
+
+</html>
