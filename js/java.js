@@ -26,7 +26,8 @@ calculoP.addEventListener('click', (event) => {
     const cantZonas = parseFloat(zonasR.value)
 
     presupuesto = parseFloat(CantLongitud * valLongitud + 
-        CantAspersor * valAspersor + CantAcople * valAcople + cantHoras * tarifaH + colector * cantZonas );
+        CantAspersor * valAspersor +  
+        cantHoras * tarifaH + colector * cantZonas );
 
     const card = document.createElement('div');
     card.classList.add('card');

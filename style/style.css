@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(180deg, rgba(63,180,109,0.9233894241290266) 59%, rgba(252,252,252,0.968207351299895) 100%);
     margin-bottom: 50px;
+    
 }
 hr{
     margin-left: 5.125rem;
@@ -24,6 +25,13 @@ h1{
     color: white;
     padding: 2%;
 }
+
+
+
+
+
+
+
 
 h2 {
     color: white;

@@ -9,20 +9,19 @@
 </head>
 
 <body>
+    
     <h1>Formulario de Presupuesto</h1>
     <hr>
     <hr>
     <form class="contenedor-formulario">
         <h2>Información del Proyecto</h2>
+        <label for="startDate">Fecha: </label><br>
+        <input type="date" id="startDate" name="startDate"><br>
         <label for="projectName">Titular Del Proyecto:</label><br>
         <input type="text" id="projectName" name="projectName" class="titular"><br>
-        <label for="projectLocation">Ubicación del proyecto:</label><br>
+        <label for="projectLocation">Ubicación:</label><br>
         <input type="text" id="projectLocation" name="projectLocation" class="direccion"><br>
-        <label for="startDate">Fecha de inicio estimada:</label><br>
-        <input type="date" id="startDate" name="startDate"><br>
-        <label for="endDate">Fecha de finalización estimada:</label><br>
-        <input type="date" id="endDate" name="endDate"><br>
-
+    
         <h2>Detalles del Área de Riego</h2>
         <label for="totalArea">Superficie total en metros cuadrados:</label><br>
         <input type="number" id="totalArea" name="totalArea"><br>
@@ -36,9 +35,19 @@
         <input type="number" id="numSprinklers" name="numSprinklers" class="aspersor"><br>
         <label for="numCouplings">Número de acoples:</label><br>
         <input type="number" id="numCouplings" name="numCouplings" class="acople"><br>
-        <label >Número de acoples:</label><br>
-        <input type="number" class="acople">BOMBA<br><input type="checkbox" id="myCheckbox" name="myCheckbox">
+        
+    
+        <label for="">Bomba</label>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
         <input type="number" id="numCouplings" name="numCouplings" placeholder="marca/tipo/potencia"><br>
+        <label for="">Tablero Electrico</label>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        <input type="number" id="numCouplings" name="numCouplings" placeholder="marca/tipo/potencia"><br>
+        <label for="">Tablero Wi-Fi</label>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox"> 
+        <input type="number" id="numCouplings" name="numCouplings" placeholder="marca/tipo/potencia"><br>
+
+
         
 
         <h2>Costos de los Materiales</h2>
@@ -48,18 +57,19 @@
         <input type="number" id="sprinklerCost" name="sprinklerCost" class="aspersorC"><br>
         <label for="couplingCost">Costo por acople:</label><br>
         <input type="number" id="couplingCost" name="couplingCost" class="acopleC"><br>
-        <label for="couplingCost">Costo del colector:</label><br>
+        <label for="couplingCost">Costo del colector (sector * colector):</label><br>
         <input type="number" id="couplingCost" name="couplingCost" class="colectorC"><br>
 
         <h2>Costos de Mano de Obra</h2>
-        <label for="workHours">Horas de trabajo estimadas:</label><br>
+        <label for="workHours">Metros de cavado:</label><br>
         <input type="number" id="workHours" name="workHours" class="CantHoras"><br>
-        <label for="hourlyRate">Tarifa por hora de trabajo:</label><br>
+        <label for="hourlyRate">Tarifa:</label><br>
         <input type="number" id="hourlyRate" name="hourlyRate" class="horasT"><br>
         <section class="contenedor-btn">
             <button type="submit" class="btn-calcular">Calcular Presupuesto</button>
         </section>
     </form>
+
     <script src="./js/java.js"></script>
 </body>
 
