@@ -20,8 +20,13 @@ calculoP.addEventListener('click', (event) => {
     const cantHoras = parseFloat(horas.value);
     const horasT = document.querySelector('.horasT');
     const tarifaH = parseFloat(horasT.value);
+    const zona = document.querySelector('.colectorC')
+    const colector = parseFloat(zona.value)
+    const zonasR = document.querySelector('.zonasR')
+    const cantZonas = parseFloat(zonasR.value)
 
-    presupuesto = parseFloat(CantLongitud * valLongitud + CantAspersor * valAspersor + CantAcople * valAcople + cantHoras * tarifaH);
+    presupuesto = parseFloat(CantLongitud * valLongitud + 
+        CantAspersor * valAspersor + CantAcople * valAcople + cantHoras * tarifaH + colector * cantZonas );
 
     const card = document.createElement('div');
     card.classList.add('card');

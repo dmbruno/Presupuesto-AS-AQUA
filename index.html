@@ -27,7 +27,7 @@
         <label for="totalArea">Superficie total en metros cuadrados:</label><br>
         <input type="number" id="totalArea" name="totalArea"><br>
         <label for="numZones">Número de zonas de riego:</label><br>
-        <input type="number" id="numZones" name="numZones"><br>
+        <input type="number" id="numZones" name="numZones" class="zonasR"><br>
 
         <h2>Materiales Necesarios</h2>
         <label for="pipeLength">Longitud total de tuberías (en metros):</label><br>
@@ -36,14 +36,20 @@
         <input type="number" id="numSprinklers" name="numSprinklers" class="aspersor"><br>
         <label for="numCouplings">Número de acoples:</label><br>
         <input type="number" id="numCouplings" name="numCouplings" class="acople"><br>
+        <label >Número de acoples:</label><br>
+        <input type="number" class="acople">BOMBA<br><input type="checkbox" id="myCheckbox" name="myCheckbox">
+        <input type="number" id="numCouplings" name="numCouplings" placeholder="marca/tipo/potencia"><br>
+        
 
         <h2>Costos de los Materiales</h2>
-        <label for="pipeCost">Costo por metro de tubería:</label><br>
+        <label for="pipeCost">Costo de tubería (m):</label><br>
         <input type="number" id="pipeCost" name="pipeCost" class="tuberiaC"><br>
         <label for="sprinklerCost">Costo por aspersor:</label><br>
         <input type="number" id="sprinklerCost" name="sprinklerCost" class="aspersorC"><br>
         <label for="couplingCost">Costo por acople:</label><br>
         <input type="number" id="couplingCost" name="couplingCost" class="acopleC"><br>
+        <label for="couplingCost">Costo del colector:</label><br>
+        <input type="number" id="couplingCost" name="couplingCost" class="colectorC"><br>
 
         <h2>Costos de Mano de Obra</h2>
         <label for="workHours">Horas de trabajo estimadas:</label><br>
