@@ -3,6 +3,7 @@ iniciar.addEventListener('click', (event) => {
     event.preventDefault();
 
     const formularioCostos = document.createElement('div')
+    formularioCostos.classList.add('contenedorDeFomrulario')
     formularioCostos.innerHTML =
         `
         <form>
@@ -37,10 +38,11 @@ iniciar.addEventListener('click', (event) => {
         const tarifaHoras = document.querySelector('.tarifaTrabajo')
         const costoHoras = tarifaHoras.value
         const presupuesto = document.createElement('div')
+        presupuesto.classList.add('contenedorPresupuesto')
 
         presupuesto.innerHTML =
             `
-        <form action="">
+        <form action=""">
         <label for="fecha">Fecha:</label><br>
         <input type="date" id="fecha" name="fecha"><br>
         <label for="cliente">Cliente:</label><br>
@@ -59,13 +61,24 @@ iniciar.addEventListener('click', (event) => {
         <input type="number" id="tuberias" name="tuberias"><br>
         <label for="horas">Horas:</label><br>
         <input type="number" id="horas" name="horas"><br>
-        <h3>Opciones:</h3>
-        <input type="checkbox" id="bomba" name="bomba">
-        <label for="bomba">Bomba</label><br>
-        <input type="checkbox" id="tableroelectrico" name="tableroelectrico">
-        <label for="tableroelectrico">Tablero Eléctrico</label><br>
-        <input type="checkbox" id="tablerowifi" name="tablerowifi">
-        <label for="tablerowifi">Tablero Wi-Fi</label><br><br>
+        <div class="contenedorCheckbox">
+        <div class="linea">
+            <input type="checkbox" id="bomba" name="bomba">
+            <label for="bomba" class="etiqueta">Bomba</label>
+            <input type="text" id="tipoBomba" name="tipoBomba" placeholder="Tipo de bomba/marca">
+        </div>
+        <div class="linea">
+            <input type="checkbox" id="bomba" name="bomba">
+            <label for="bomba" class="etiqueta">Tablero Electrico</label>
+            <input type="text" id="tipoBomba" name="tipoBomba" placeholder="Tipo de tablero/marca">
+        </div>
+        <div class="linea">
+            <input type="checkbox" id="bomba" name="bomba">
+            <label for="bomba" class="etiqueta">Tablero Wi-Fi</label>
+            <input type="text" id="tipoBomba" name="tipoBomba" placeholder="Tipo de tablero/marca">
+        </div>
+    </div>
+        
         <input type="submit" value="Calcular Presupuesto" class="calculo">
         </form> 
     
@@ -121,7 +134,6 @@ iniciar.addEventListener('click', (event) => {
             presupuesto.remove();
             const titulo= document.querySelector('.paraOcultar')
             titulo.textContent='';
-
 
         })
     })

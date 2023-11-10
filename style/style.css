@@ -4,11 +4,14 @@
     box-sizing: border-box;
 
 }
-
+h3{
+    margin-top: .9375rem;
+}
 
 form {
     width: 700px;
     margin: 0 auto;
+    padding: 1.25rem;
 }
 
 label {
@@ -131,4 +134,27 @@ input[type="submit"]:hover {
     font-size: 1.9rem;
     margin-top: .9375rem;
     padding: .9375rem;
+}
+
+.contenedorDeFomrulario{
+    width: 90%;
+}
+
+.contenedorPresupuesto{
+    width: 100%;
+}
+
+.linea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorCheckbox{
+    padding: 1.25rem;
+}
+
+.etiqueta{
+    font-size: 1.2rem;
+    width: 18.75rem;
 }
