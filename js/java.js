@@ -119,6 +119,8 @@ iniciar.addEventListener('click', (event) => {
             ` 
             document.body.appendChild(presupuestoF)
             presupuesto.remove();
+            const titulo= document.querySelector('.paraOcultar')
+            titulo.textContent='';
 
 
         })
